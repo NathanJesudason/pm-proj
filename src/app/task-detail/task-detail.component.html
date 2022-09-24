@@ -1,0 +1,10 @@
+<div *ngIf="task">
+
+    <h2>{{task.name | uppercase}} Details</h2>
+    <div><span>due date: </span>{{task.date}}</div>
+    <div>
+      <label for="task-points">Task name: </label>
+      <input id="task-points" [(ngModel)]="task.points" placeholder="0">
+    </div>
+  
+  </div>
